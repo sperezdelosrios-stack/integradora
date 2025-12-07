@@ -1,5 +1,5 @@
 # Modulo encargado de controlar la interfaz de login.
-
+#login
 import customtkinter as ctk
 from model.administrador import Administrador
 from view.tema import Tema
@@ -107,4 +107,5 @@ class LoginApp:
         self.root.destroy()
 
     def run(self): # Metodo encargado de arrancar la aplicacion.
+
         self.root.mainloop()
