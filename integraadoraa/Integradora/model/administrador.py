@@ -1,5 +1,5 @@
 # Modulo encargado de controlar las operaciones dentro de administradores.
-
+#admin
 from base_datos.consultas import ConsultasDB
 
 class Administrador:
@@ -41,4 +41,5 @@ class Administrador:
         return self.consultas.eliminar_administrador(id_admin)
     
     def reactivar(self, id_admin):
+
         return self.consultas.reactivar_administrador(id_admin)

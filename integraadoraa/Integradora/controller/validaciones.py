@@ -1,5 +1,5 @@
 # Modulo encargado de realizar las validaciones dentro del sistema.
-
+#validaciones
 import re
 from datetime import datetime
 
@@ -40,4 +40,5 @@ class Validaciones:
             peso_float = float(peso)
             return peso_float > 0 and peso_float < 500 
         except ValueError:
+
             return False
