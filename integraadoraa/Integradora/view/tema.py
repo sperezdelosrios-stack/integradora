@@ -1,5 +1,5 @@
 # Modulo encargado de controlar los elementos de diferentes interfaces.
-
+#tema
 import customtkinter as ctk
 from tkinter import ttk
 from configuracion import Configuracion
@@ -117,4 +117,5 @@ class Tema:
         style.map(
             "Treeview.Heading",
             background=[('active', self.colores["verde_hover"])] 
+
         )
