@@ -1,5 +1,5 @@
 # Modulo encargado de las consultas de la aplicacion.
-
+#consultas
 from base_datos.conexion import ConexionDB
 from datetime import datetime
 
@@ -188,4 +188,5 @@ class ConsultasDB:
     def obtener_total_ingresos_hoy(self, id_admin, fecha):
         query = "SELECT SUM(monto) as total FROM ingresos WHERE id_admin = %s AND fecha = %s"
         resultado = self.db.ejecutar_consulta(query, (id_admin, fecha))
+
         return resultado[0]['total'] if resultado and resultado[0]['total'] else 0
