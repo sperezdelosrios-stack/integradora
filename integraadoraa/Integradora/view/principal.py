@@ -1,5 +1,5 @@
 # Modulo encargado de controlar la interfaz principal de la aplicacion.
-
+#principla
 import customtkinter as ctk
 from tkinter import messagebox
 from view.tema import Tema
@@ -144,4 +144,5 @@ class VentanaPrincipal:
     def cerrar_sesion(self): # Metodo encargado de cerrar sesion.
         if messagebox.askyesno("Confirmar", "¿Está seguro que desea cerrar sesión?"):
             if self.logout_callback:
+
                 self.logout_callback()
