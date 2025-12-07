@@ -1,5 +1,5 @@
 # Modulo encargado de controlar la interfaz de citas.
-
+#citas
 import customtkinter as ctk
 from tkinter import ttk, messagebox
 from model.cita import Cita
@@ -246,5 +246,6 @@ class VistaCitas(ctk.CTkFrame):
                     popup.destroy()
                     messagebox.showinfo("Éxito", "Cita reprogramada")
             except Exception as e: messagebox.showerror("Error", str(e))
+
 
         self.tema.crear_boton_primario(popup, "Guardar Cambios", guardar, 200).pack(pady=20)
